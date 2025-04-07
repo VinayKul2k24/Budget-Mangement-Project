@@ -1,0 +1,47 @@
+Two Entities : 
+    - Admin (heighest Permission acess)
+    - User (appropriate Permission access)
+ 
+
+admin_main        user_main
+       \           /
+        \         /
+         \       /
+        userData.txt
+(here, data will be stored)
+
+
+We'll consider 4 users : 
++-----------------------+
+| usernames | passwords |
++-----------------------+
+|   user1   |   pass1   |
+|   user2   |   pass2   |
+|   user3   |   pass3   |
+|   user4   |   pass4   |
++-----------------------+
+
+MAIN-APPLICATION : 
+	- Each User will be given a budget of 50,000 (or admin-custom)
+	- And each User will tell how much money they spent and on which items
+	- Users will be able to see their original given budget, and remaingin amount
+	- And the admin will be able to see those data of all users
+	- And each user will be able to view only their own data
+
+Admin can : 
+    - Add User
+    - Remove User
+    - Change Budget
+    - View Every Information of each User
+
+User can : 
+    - View/add their expense list
+    - View theire remaing budget
+    - change their username and password (optional)
+
+Format In Which the data will be stored in the file userData.txt : 
+
+username___password___givenBudget___expendedAmount___remainingAmount___Expence1|Price1_Expence2|Price2_Expence3|Price3\n
+username___password___givenBudget___expendedAmount___remainingAmount___Expence1|Price1_Expence2|Price2_Expence3|Price3\n
+username___password___givenBudget___expendedAmount___remainingAmount___Expence1|Price1_Expence2|Price2_Expence3|Price3\n
+username___password___givenBudget___expendedAmount___remainingAmount___Expence1|Price1_Expence2|Price2_Expence3|Price3\n
